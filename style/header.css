@@ -52,11 +52,10 @@ header .main-menu{
 @media (max-width: 500px){
     .main-menu{
         display: none;
+        justify-content: space-between;
     }
 
-    .welcome-main{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    .main-options{
+        font-size: 22px;
     }
 }

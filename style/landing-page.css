@@ -217,7 +217,66 @@ progress::after {
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+    .body-welcome {
+        height: auto;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .body-welcome .welcome-text {
+        width: auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .welcome-text {
+        margin: 20px;
+    }
+
+    .welcome-photo img {
+       display: none;
+    }
+
+    .body-presentation .presentation-about {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-presentation .presentation-photo {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills-info {
+        width: 96%;
+        padding: auto;
+    }
+
+    .body-experience .box-experience .experience-info {
+        width: 100%;
+        
+    }
+
+    .body-portfolio .portfolio-main-projects .main-projects-options {
+        gap: 6vw;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    p{
+        font-size: var(--base-font-responsive);
+    }
+
+    h3{
+        font-size: var(--h3-size-responsive);
+    }
 }
 
 /* Tablet */

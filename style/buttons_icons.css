@@ -19,6 +19,6 @@ button{
 
 .button-to-presentation:hover{
     background-color: transparent;
-    color: var(--primary-color);
+    color: var(--white);
     border-color: var(--primary-color);
 }

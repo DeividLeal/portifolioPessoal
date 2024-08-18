@@ -23,7 +23,9 @@
     --h1-size: 6.4rem;
     --h2-size: 2.8rem;
     --h3-size: 1.4rem;
+    --h3-size-responsive: 2.0rem;
     --base-font-size: 1.2rem;
+    --base-font-responsive: 2.0rem;
     --font-weight: 600;
     --font-weight-str: 700;
     --font-weight-md: 400;
