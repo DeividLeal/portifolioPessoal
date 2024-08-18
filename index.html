@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deivid Caldas</title>
+    <title>Portifólio Deivid Caldas</title>
     <link rel="shortcut icon" href="/assents/icon-cv.png"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,11 @@
             <nav class="main-menu vt-inner-padding-min">
                 <nav class="main-options">
                     <ul id="main-options-menu">
-                        <li><a class="menu-link" href="#id-welcome">Inicio</a></li>
-                        <li><a class="menu-link" href="#id-about">Sobre</a></li>
-                        <li><a class="menu-link" href="#id-experience">Experiência</a></li>
-                        <li><a class="menu-link" href="#id-portfolio">Portfólio</a></li>
-                        <li><a class="menu-link" href="#id-contact">Contato</a></li>
+                        <li><a class="menu-link" href="#id-welcome" role="menuitem">Inicio</a></li>
+                        <li><a class="menu-link" href="#id-about" role="menuitem">Sobre</a></li>
+                        <li><a class="menu-link" href="#id-experience" role="menuitem">Experiência</a></li>
+                        <li><a class="menu-link" href="#id-portfolio" role="menuitem">Portfólio</a></li>
+                        <li><a class="menu-link" href="#id-contact" role="menuitem">Contato</a></li>
                     </ul>
                 </nav>
             </nav>
@@ -34,7 +34,8 @@
                 <div class="welcome-text">
                     <h3 class="textoOn" id="texto">Olá! Meu nome é</h3>
                     <h1 class="h1On" id="h1">Deivid Caldas</h1>
-                    <h3 class="textoOn" id="texto">sou desenvolvedor web, gosto de encarar desafios e agregar valor aos projetos em que trabalho. Explore aqui <button class="button-to-presentation"> <a href="#id-about">Muito prazer! ツ</a></button></h3>
+                    <h3 class="textoOn" id="texto">sou desenvolvedor web, gosto de encarar desafios e agregar valor aos projetos em que trabalho.</h3> <br>
+                    <a class="button-to-presentation" href="#id-about">Me conheça mais! ツ</a>
                 </div>
                 <div class="welcome-photo">
                     <img src="/assents/img-gata.jpg" alt="Foto de uma gata">
@@ -46,13 +47,13 @@
                     <h2>Quem sou eu?</h2>
                     <h3>Um pouco sobre mim</h3>
                     <p>
-                        Sou Desenvolvedor Web, formado em Gestão Financeira. Participei do Bootcamp Web Full Stack da Labenu e do curso.
+                        Sou formado em Gestão Financeira e apaixonado por tecnologia. Participei de cursos na Digital Innovation One, Rocketseat, DevMedia e atualmente no Programadores do Amanhã.
                     </p>
                     <p>
-                        Possuo experiência em diferentes stacks como ReactJs, Javascript, HTML5, CSS3, API REST, NodeJs. Além disso, tenho conhecimento em metodologias ágeis como Scrum e Kanban.
+                        Atualmente, estou estudando desenvolvimento de aplicações web, com foco em: Lógica de Programação, HTML5/CSS, JavaScript, ReactJS, Git/GitHub, Soft skills, Semântica/Acessibilidade, UI/UX, Metodologias ágeis com SCRUM.
                     </p>
                     <p>
-                        Gosto de trabalhar em ambientes desafiadores, onde eu possa me desenvolver, da mesma forma que eu possa agregar valor às pessoas ao meu redor.
+                        Gosto de trabalhar em equipes colaborativas, onde posso aprender com os outros e contribuir para projetos que fazem a diferença. Acredito que o conhecimento deve ser compartilhado e utilizado para solucionar problemas reais.
                     </p>
                 </div>
                 <div class="presentation-photo animation" id="presentation-photo">
@@ -81,7 +82,7 @@
                                 <h3 class="h3-react">React JS</h3>
                                 <progress value="10" max="100"></progress>
                                 <h3 class="h3-git">Git</h3>
-                                <progress value="30" max="100"></progress>
+                                <progress value="50" max="100"></progress>
                             </div>
                         </div>
                     </div>
@@ -134,8 +135,8 @@
                         <h2>Principais Projetos</h2>
                         <h3>Alguns dos meus projetos pessoais</h3>
                     </div>
-                    <div class="main-projects-options vt-inner-padding-sm animation" id="main-projects-options">
-                        <div class="card_project" onclick="window.open('https://github.com/DeividLeal/jogo-da-cobrinha')" data-anime="bottom">
+                    <span class="main-projects-options vt-inner-padding-sm animation" id="main-projects-options">
+                        <a href="https://github.com/DeividLeal/jogo-da-cobrinha" target="_blank" class="card_project" data-anime="bottom">
                             <div class="card_project_img">
                                 <img src="/assents/jogo-da-cobrinha.gif" alt="projeto ">
                             </div>
@@ -143,26 +144,26 @@
                                 <h3>Jogo da Cobrinha</h3>
                                 <p>FrontEnd</p>
                             </div>
+                        </a>
+                        <a href="https://github.com/DeividLeal/DOM" target="_blank" class="card_project" data-anime="bottom">
+                            <div class="card_project_img">
+                                <img src="/assents/DOM.gif" alt="projeto manipulando DOM ">
                             </div>
-                            <div class="card_project" onclick="window.open('https://github.com/DeividLeal/DOM')" data-anime="bottom">
-                                <div class="card_project_img">
-                                    <img src="/assents/DOM.gif" alt="projeto ">
-                                </div>
-                                <div class="card_project_about">
-                                    <h3>Manipulando o DOM</h3>
-                                    <p>FrontEnd</p>
-                                </div>
-                                </div>
-                                <div class="card_project" onclick="window.open('https://github.com/DeividLeal/PokedexJS')" data-anime="bottom">
-                                    <div class="card_project_img">
-                                        <img src="./assents/PokedexJs.gif" alt="projeto ">
-                                    </div>
-                                    <div class="card_project_about">
-                                        <h3>Pokedex JS</h3>
-                                        <p>FrontEnd</p>
-                                    </div>
-                                    </div>
-                    </div>
+                            <div class="card_project_about">
+                                <h3>Manipulando o DOM</h3>
+                                <p>FrontEnd</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/DeividLeal/PokedexJS" target="_blank" class="card_project" data-anime="bottom">
+                            <div class="card_project_img">
+                                <img src="./assents/PokedexJs.gif" alt="projeto Pokedex em JS ">
+                            </div>
+                            <div class="card_project_about">
+                                <h3>Pokedex JS</h3>
+                                <p>FrontEnd</p>
+                            </div>
+                        </a>
+                    </span>
                     <div class="portfolio-more vt-inner-padding-sm section-title animation" id="portfolio-cta">
                         <a href="https://github.com/DeividLeal" target="_blank"><h3>Veja mais projetos</h3></a>
                     </div>

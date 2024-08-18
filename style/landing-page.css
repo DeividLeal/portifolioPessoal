@@ -13,8 +13,12 @@
 }
 
 .body-welcome .welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
     width: 50%;
-    min-width: 450px;
+    min-width: 350px;
 }
 
 .body-welcome .welcome-photo img{
@@ -24,7 +28,7 @@
 }
 
 .body-presentation{
-    background-color: var(--primary-color);
+    background: var(--primary-radial-gradient);
     flex-wrap: wrap;
     color: var(--dark);
 }
@@ -64,7 +68,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4vh;
 }
 
 .skills-info{
@@ -131,7 +134,7 @@ progress{
 }
 
 progress::-webkit-progress-value {
-    background-color: var(--primary-color);
+    background: var(--primary-linear-gradient);
     border-radius: 8px;
 }
 
@@ -185,9 +188,11 @@ progress::after {
     transition: .3s;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project:hover{
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project:hover,
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project:focus{
     transform: scale(1.1);
 }
+
 
 .body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img{
     width: 100%;
@@ -195,7 +200,7 @@ progress::after {
 }
 
 .body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img img{
-    width: 96%;
+    width: 100%;
     border-radius: 8px;
     max-height: 176px;
     object-fit: cover;
@@ -211,61 +216,14 @@ progress::after {
     text-align: center;
 }
 
-@media(max-width: 800px){
-    .body-welcome{
-        flex-direction: column-reverse;
-        margin: 24vh 0;
-    }
-
-    .body-welcome .welcome-text{
-        justify-content: center;
-    }
-
-    .body-presentation{
-        flex-direction: row-reverse;
-    }
-
-    .body-presentation .presentation-about{
-        min-width: 500px;
-    }
-
-    .body-presentation .presentation-photo{
-        width: 60vw;
-    }
-
-    .body-presentation .presentation-photo img{
-        width: 80vw;
-    }
+/* Mobile */
+@media (max-width: 480px) {
 }
 
-@media(max-width:500px){
-    .body-welcome .welcome-text{
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+}
 
-    .body-welcome .welcome-text span{
-        height: 70px;
-        width: 200px;
-        align-items: center;
-        justify-content: center;     
-    }
-
-    .body-presentation{
-        flex-direction: column;
-    }
-
-    .body-presentation .presentation-about{
-        min-width: 360px;
-    }
-
-    .body-presentation .presentation-photo{
-        width: 60vw;
-    }
-
-    .body-presentation .presentation-photo img{
-        width: 80vw;
-    }
-
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1199px) {
 }
