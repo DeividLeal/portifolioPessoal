@@ -228,6 +228,7 @@ progress::after {
         width: auto;
         align-items: center;
         gap: 20px;
+        margin-top: 60px;
     }
 
     .welcome-text {
