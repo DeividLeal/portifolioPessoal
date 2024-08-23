@@ -4,9 +4,9 @@
 
 */
 
-@import url('./style/base.css');
-@import url('./style/buttons_icons.css');
-@import url('./style/fonts.css');
+@import url('style/base.css');
+@import url('style/buttons_icons.css');
+@import url('style/fonts.css');
 
 /*
 
@@ -14,7 +14,7 @@
 
 */
 
-@import url('./style/landing-page.css');
+@import url('style/landing-page.css');
 
 /*
 
@@ -22,5 +22,5 @@
 
 */
 
-@import url('./style/footer.css');
-@import url('./style/header.css');
+@import url('style/footer.css');
+@import url('style/header.css');

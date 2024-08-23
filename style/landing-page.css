@@ -1,5 +1,5 @@
-@import url('/style/variables.css');
-@import url('/style/animations.css');
+@import url('./variables.css');
+@import url('./animations.css');
 
 .body-welcome{
     justify-content:space-evenly;
