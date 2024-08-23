@@ -1,12 +1,9 @@
-
+/* Importar folhas de estilo */
 @import url('./variables.css');
 @import url('./animations.css');
 
-.container-off header{
-    background-color: var(--second-color-dark-mode);
-}
-
-header{
+/* Estilos do cabeçalho */
+header {
     position: fixed;
     top: 0;
     background-color: var(--lm-second-color);
@@ -14,48 +11,64 @@ header{
     border-bottom: var(--primary-color) 1px solid;
     animation: top_to_bottom .7s .2s backwards;
     z-index: 1;
-
 }
 
-header .main-menu{
+/* Estilos do menu principal */
+header .main-menu {
     display: flex;
     justify-content: center;
 }
 
+/* Estilos das opções principais */
 .main-options,
-#main-options-menu{
+#main-options-menu {
     display: flex;
 }
 
-.main-options{
+.main-options {
     align-items: center;
     width: 90%;
     justify-content: space-evenly;
 }
 
-#main-options-menu{
+/* Estilos do menu de opções principais */
+#main-options-menu {
     list-style: none;
     gap: 10vw;
 }
 
-#main-options-menu > li{
+#main-options-menu > li {
     display: inline-block;
 }
 
-.menu-link, .menu-linkOff{
+/* Estilos do link do menu */
+.menu-link {
     transition: all ease 0.2s;
     text-decoration: none;
 }
 
-
-
-@media (max-width: 500px){
-    .main-menu{
-        display: none;
+/* Estilos responsivos */
+@media (max-width: 500px) {
+    .main-menu {
         justify-content: space-between;
     }
 
-    .main-options{
+    .main-options {
         font-size: 22px;
+    }
+    
+    header .main-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-options-menu {
+        font-size: larger;
+    }
+
+    .menu-link {
+        display: block;
+        padding: 10px;
+        text-align: center;
     }
 }

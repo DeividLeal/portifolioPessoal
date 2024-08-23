@@ -1,26 +1,24 @@
 @import url('./variables.css');
 
+/* Menu do rodapé */
 footer .footer-menu,
-footer .footer-contacts{
+footer .footer-contacts {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer .footer-menu{
+footer .footer-menu {
     background-color: var(--dm-second-color);
-    flex-wrap:wrap-reverse;
+    flex-wrap: wrap-reverse;
 }
 
-footer .footer-menu .footer-text{
-    color: var(--white);
-}
-
+footer .footer-menu .footer-text,
 .footer-a {
     color: var(--white);
 }
 
-footer .footer-menu .footer-img{
+footer .footer-menu .footer-img {
     height: 30vh;
     width: auto;
     margin-left: 5vw;
@@ -28,29 +26,30 @@ footer .footer-menu .footer-img{
     filter: invert(1);
 }
 
-footer .footer-menu .icon-social-media{
+footer .footer-menu .icon-social-media {
     margin-right: 2vw;
     height: 36px;
     transition: transform .3s;
 }
 
-footer .footer-menu .icon-social-media:hover{
+footer .footer-menu .icon-social-media:hover {
     transform: scale(1.2);
 }
 
-footer .footer-contacts{
+/* Contatos do rodapé */
+footer .footer-contacts {
     height: 8vh;
     width: 100%;
     background-color: var(--black);
 }
 
-footer .footer-contacts span a{
+footer .footer-contacts span a {
     color: var(--white);
 }
 
-@media(max-width: 500px){
-
-    footer .footer-contacts{
+/* Media Query */
+@media (max-width: 500px) {
+    footer .footer-contacts {
         flex-direction: column;
     }
 }

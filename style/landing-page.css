@@ -1,18 +1,14 @@
+/* Declarações de importação */
 @import url('./variables.css');
 @import url('./animations.css');
 
-.body-welcome{
-    justify-content:space-evenly;
+/* Corpo de boas-vindas */
+.body-welcome {
+    justify-content: space-evenly;
     height: 100vh;
 }
 
-.body-portfolio, .body-experience{
-    flex-direction: column;
-    min-height: 80vh;
-    margin: auto;
-}
-
-.body-welcome .welcome-text{
+.body-welcome .welcome-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,41 +17,50 @@
     min-width: 350px;
 }
 
-.body-welcome .welcome-photo img{
+.body-welcome .welcome-photo img {
     width: 290px;
     border-radius: 50%;
     animation: float 6s ease-in-out infinite;
 }
 
-.body-presentation{
+/* Corpo de portfólio e experiência */
+.body-portfolio,
+.body-experience {
+    flex-direction: column;
+    min-height: 80vh;
+    margin: auto;
+}
+
+/* Corpo de apresentação */
+.body-presentation {
     background: var(--primary-radial-gradient);
     flex-wrap: wrap;
     color: var(--dark);
 }
 
-.body-presentation .presentation-about,
-.body-presentation .presentation-photo{
+.presentation-about,
+.presentation-photo {
     display: flex;
     width: 50%;
     min-width: 350px;
 }
 
-.body-presentation .presentation-about{
+.body-presentation .presentation-about {
     justify-content: flex-start;
     flex-direction: column;
 }
 
-.body-presentation .presentation-about h3,
-.body-presentation .presentation-about p{
+.presentation-about h3,
+.presentation-about p {
     margin-bottom: 4vh;
 }
 
-.body-presentation .presentation-photo{
+.body-presentation .presentation-photo {
     justify-content: center;
     align-items: center;
 }
 
-.body-presentation .presentation-photo img{
+.body-presentation .presentation-photo img {
     min-width: 320px;
     width: 56%;
     border: 8px solid var(--white);
@@ -63,70 +68,60 @@
     border-radius: 8px;
 }
 
-.body-experience .experience-menu .box-skills{
+/* Corpo de experiência */
+.body-experience .experience-menu .box-skills {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.skills-info{
+.skills-info {
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
 
-.h3-html::after {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png);
-    background-size: cover;
-    margin-left: 10px;
-}
-
-.h3-css::after {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-2.png);
-    background-size: cover;
-    margin-left: 10px;
-}
-
-.h3-js::after {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-3.png);
-    background-size: cover;
-    margin-left: 10px;
-}
-
-.h3-react::after {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg);
-    background-size: cover;
-    margin-left: 10px;
-}
-
+/* Ícones de habilidades */
+.h3-html::after,
+.h3-css::after,
+.h3-js::after,
+.h3-react::after,
 .h3-git::after {
     content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(https://avatars.githubusercontent.com/u/18133?s=200&v=4https://www.alura.com.br/artigos/assets/html-css-js/imagem-4.png);
-    background-size: cover;
     margin-left: 10px;
 }
 
-progress{
+.h3-html::after {
+    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png);
+    background-size: cover;
+}
+
+.h3-css::after {
+    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-2.png);
+    background-size: cover;
+}
+
+.h3-js::after {
+    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-3.png);
+    background-size: cover;
+}
+
+.h3-react::after {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg);
+    background-size: cover;
+}
+
+.h3-git::after {
+    background-image: url(https://avatars.githubusercontent.com/u/18133?s=200&v=4https://www.alura.com.br/artigos/assets/html-css-js/imagem-4.png);
+    background-size: cover;
+}
+
+/* Barra de progresso */
+progress {
     height: 25px;
     width: 100dvh;
     position: relative;
@@ -153,20 +148,22 @@ progress::after {
     color: var(--dark);
 }
 
-.body-experience .box-experience{
+/* Corpo de experiência */
+.body-experience .box-experience {
     flex-direction: column;
 }
 
-.body-experience .box-experience .experience-info{
+.body-experience .box-experience .experience-info {
     width: 50%;
     min-width: 350px;
     margin-bottom: 8vh;
 }
 
-.body-experience .box-experience .experience-info h3 span{
+.body-experience .box-experience .experience-info h3 span {
     color: var(--primary-color);
 }
 
+/* Corpo de portfólio */
 .body-portfolio .portfolio-main-projects .main-projects-options {
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +171,7 @@ progress::after {
     gap: 2vw;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project{
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project {
     width: 380px;
     height: 260px;
     box-shadow: 4px 4px 1px var(--primary-color);
@@ -182,36 +179,35 @@ progress::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;   
-    border: 1px solid var(--gray); 
+    justify-content: center;
+    border: 1px solid var(--gray);
     cursor: pointer;
     transition: .3s;
 }
 
 .body-portfolio .portfolio-main-projects .main-projects-options .card_project:hover,
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project:focus{
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project:focus {
     transform: scale(1.1);
 }
 
-
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img{
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img {
     width: 100%;
     text-align: center;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img img{
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img img {
     width: 100%;
     border-radius: 8px;
     max-height: 176px;
     object-fit: cover;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_about{
+.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_about {
     width: 100%;
     padding-left: 2vw;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .portfolio-more{
+.body-portfolio .portfolio-main-projects .main-projects-options .portfolio-more {
     width: 100%;
     text-align: center;
 }
@@ -228,7 +224,7 @@ progress::after {
         width: auto;
         align-items: center;
         gap: 20px;
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
     .welcome-text {
@@ -236,7 +232,7 @@ progress::after {
     }
 
     .welcome-photo img {
-       display: none;
+        display: none;
     }
 
     .body-presentation .presentation-about {
@@ -253,12 +249,10 @@ progress::after {
 
     .skills-info {
         width: 96%;
-        padding: auto;
     }
 
     .body-experience .box-experience .experience-info {
         width: 100%;
-        
     }
 
     .body-portfolio .portfolio-main-projects .main-projects-options {
@@ -271,19 +265,69 @@ progress::after {
         text-align: center;
     }
 
-    p{
+    p {
         font-size: var(--base-font-responsive);
     }
 
-    h3{
+    h3 {
         font-size: var(--h3-size-responsive);
     }
 }
 
 /* Tablet */
 @media (min-width: 481px) and (max-width: 768px) {
+    /* Add your CSS rules for tablet devices here */
+    .body-welcome .welcome-text {
+        width: 80%;
+        min-width: unset;
+    }
+
+    .body-presentation .presentation-about,
+    .body-presentation .presentation-photo {
+        width: 80%;
+        min-width: unset;
+    }
+
+    .skills-info {
+        width: 90%;
+        padding: 0;
+    }
+
+    .body-experience .box-experience .experience-info {
+        width: 80%;
+        min-width: unset;
+    }
+
+    .body-portfolio .portfolio-main-projects .main-projects-options {
+        gap: 4vw;
+    }
 }
 
 /* Desktop */
 @media (min-width: 992px) and (max-width: 1199px) {
+    /* Add your CSS rules for desktop devices here */
+    .body-welcome .welcome-text {
+        width: 60%;
+        min-width: unset;
+    }
+
+    .body-presentation .presentation-about,
+    .body-presentation .presentation-photo {
+        width: 60%;
+        min-width: unset;
+    }
+
+    .skills-info {
+        width: 80%;
+        padding: 0;
+    }
+
+    .body-experience .box-experience .experience-info {
+        width: 60%;
+        min-width: unset;
+    }
+
+    .body-portfolio .portfolio-main-projects .main-projects-options {
+        gap: 6vw;
+    }
 }

@@ -1,6 +1,7 @@
 @import url('./variables.css');
 
-button{
+/* Estilos comuns para botões */
+.button {
     height: 60px;
     width: 220px;
     border: 2px solid transparent;
@@ -8,16 +9,18 @@ button{
     cursor: pointer;
 }
 
-.button-to-presentation{
+/* Botão para apresentação */
+.button-to-presentation {
     font-size: var(--h3-size);
     border-color: var(--primary-color);
-    background:var(--primary-linear-gradient);
+    background: var(--primary-linear-gradient);
     border-radius: 12px;
     padding: 15px 20px;
     border: 1px solid transparent;
 }
 
-.button-to-presentation:hover{
+/* Efeito de hover para o botão de apresentação */
+.button-to-presentation:hover {
     background-color: transparent;
     color: var(--white);
     border-color: var(--primary-color);

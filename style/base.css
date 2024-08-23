@@ -43,11 +43,6 @@ html{
     padding: var(--ht-inner-padding-min);
 }
 
-.container-off{
-    background-color: var(--second-color-dark-mode);
-    color: var(--tertiary-color-dark-mode);
-}
-
 .container-main{
     display: flex;
     flex-direction: column;
