@@ -31,6 +31,10 @@ header .main-menu {
     justify-content: space-evenly;
 }
 
+a:hover {
+    color: var(--primary-color);
+}
+
 /* Estilos do menu de opções principais */
 #main-options-menu {
     list-style: none;
