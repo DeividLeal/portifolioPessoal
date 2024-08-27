@@ -52,10 +52,6 @@ header .main-menu {
     .main-menu {
         justify-content: space-between;
     }
-
-    .main-options {
-        font-size: 22px;
-    }
     
     header .main-menu {
         flex-direction: column;
@@ -63,7 +59,7 @@ header .main-menu {
     }
 
     #main-options-menu {
-        font-size: larger;
+        font-size: medium
     }
 
     .menu-link {

@@ -23,6 +23,12 @@
     animation: float 6s ease-in-out infinite;
 }
 
+.textInit {
+    font-size: var(--h3-size);
+    font-weight: var(--font-weight-md);
+    color: var(--dark);
+}
+
 /* Corpo de portfólio e experiência */
 .body-portfolio,
 .body-experience {
@@ -96,17 +102,17 @@
 }
 
 .h3-html::after {
-    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png);
+    background-image: url(/assents/icon-html.webp);
     background-size: cover;
 }
 
 .h3-css::after {
-    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-2.png);
+    background-image: url(/assents/icon-css.webp);
     background-size: cover;
 }
 
 .h3-js::after {
-    background-image: url(https://www.alura.com.br/artigos/assets/html-css-js/imagem-3.png);
+    background-image: url(/assents/icon-js.webp);
     background-size: cover;
 }
 
@@ -160,7 +166,7 @@ progress::after {
 }
 
 .body-experience .box-experience .experience-info h3 span {
-    color: var(--primary-color);
+    color: var(--secundary-color);
 }
 
 /* Corpo de portfólio */
@@ -181,7 +187,6 @@ progress::after {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--gray);
-    cursor: pointer;
     transition: .3s;
 }
 
@@ -275,8 +280,8 @@ progress::after {
 }
 
 /* Tablet */
-@media (min-width: 481px) and (max-width: 768px) {
-    /* Add your CSS rules for tablet devices here */
+@media (min-width: 501px) and (max-width: 768px) {
+
     .body-welcome .welcome-text {
         width: 80%;
         min-width: unset;
@@ -305,7 +310,7 @@ progress::after {
 
 /* Desktop */
 @media (min-width: 992px) and (max-width: 1199px) {
-    /* Add your CSS rules for desktop devices here */
+
     .body-welcome .welcome-text {
         width: 60%;
         min-width: unset;

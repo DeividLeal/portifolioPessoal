@@ -1,24 +1,29 @@
 @import url('./variables.css');
 
 /* Menu do rodapé */
-footer .footer-menu,
-footer .footer-contacts {
+.footer-menu, .footer-contacts {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer .footer-menu {
+.footer-menu {
     background-color: var(--dm-second-color);
     flex-wrap: wrap-reverse;
 }
 
-footer .footer-menu .footer-text,
+.footer-menu .footer-text,
 .footer-a {
     color: var(--white);
+    font-size: var(--base-font-size);
 }
 
-footer .footer-menu .footer-img {
+ .footer-menu .footer-text {
+    font-size: var(--h3-size);
+    margin-left: 5vw;
+}
+
+ .footer-img {
     height: 30vh;
     width: auto;
     margin-left: 5vw;
@@ -37,7 +42,7 @@ footer .footer-menu .icon-social-media:hover {
 }
 
 /* Contatos do rodapé */
-footer .footer-contacts {
+.footer-contacts {
     height: 8vh;
     width: 100%;
     background-color: var(--black);
