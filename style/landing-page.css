@@ -102,17 +102,17 @@
 }
 
 .h3-html::after {
-    background-image: url(/assents/icon-html.webp);
+    background-image: url(./assents/icon-html.webp);
     background-size: cover;
 }
 
 .h3-css::after {
-    background-image: url(/assents/icon-css.webp);
+    background-image: url(./assents/icon-css.webp);
     background-size: cover;
 }
 
 .h3-js::after {
-    background-image: url(/assents/icon-js.webp);
+    background-image: url(./assents/icon-js.webp);
     background-size: cover;
 }
 
