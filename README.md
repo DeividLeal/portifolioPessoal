@@ -1,4 +1,4 @@
-📂 Meu Portfólio Pessoal 
+📂 Meu Portfólio Pessoal <b2> 
 Olá! 👋 Bem-vindo ao meu portfólio pessoal. Aqui você encontrará detalhes sobre meu trabalho e projetos. Vamos dar uma olhada no que você pode esperar:
 
 🌟 Visão Geral
