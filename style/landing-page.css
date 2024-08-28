@@ -102,27 +102,27 @@
 }
 
 .h3-html::after {
-    background-image: url('../img/icon-html.webp');
+    background-image: url(../img/icon-html.webp);
     background-size: cover;
 }
 
 .h3-css::after {
-    background-image: url('../img/icon-css.webp');
+    background-image: url(../img/icon-css.webp);
     background-size: cover;
 }
 
 .h3-js::after {
-    background-image: url('../img/icon-js.webp');
+    background-image: url(../img/icon-js.webp);
     background-size: cover;
 }
 
 .h3-react::after {
-    background-image: url('../img/react-icon.webp');
+    background-image: url(../img/react-icon.webp);
     background-size: cover;
 }
 
 .h3-git::after {
-    background-image: url('../img/git-icon.webp');
+    background-image: url(../img/git-icon.webp);
     background-size: cover;
 }
 
