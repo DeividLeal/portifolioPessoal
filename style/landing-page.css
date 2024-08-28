@@ -74,11 +74,12 @@
 }
 
 /* Corpo de experiência */
-.body-experience .experience-menu .box-skills {
+
+.experience-menu {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    width: 48%;
 }
 
 .skills-info {
@@ -101,34 +102,34 @@
 }
 
 .h3-html::after {
-    background-image: url(/assents/icon-html.webp);
+    background-image: url(/img/icon-html.webp);
     background-size: cover;
 }
 
 .h3-css::after {
-    background-image: url(/assents/icon-css.webp);
+    background-image: url(/img/icon-css.webp);
     background-size: cover;
 }
 
 .h3-js::after {
-    background-image: url(/assents/icon-js.webp);
+    background-image: url(/img/icon-js.webp);
     background-size: cover;
 }
 
 .h3-react::after {
-    background-image: url(/assents/react-icon.webp);
+    background-image: url(/img/react-icon.webp);
     background-size: cover;
 }
 
 .h3-git::after {
-    background-image: url(/assents/git-icon.webp);
+    background-image: url(/img/git-icon.webp);
     background-size: cover;
 }
 
 /* Barra de progresso */
 progress {
     height: 25px;
-    width: 100dvh;
+    width: 100%;
     position: relative;
     border-radius: 8px;
 }
@@ -281,13 +282,10 @@ progress::after {
 
     .body-welcome .welcome-text {
         width: 80%;
-        min-width: unset;
     }
 
-    .body-presentation .presentation-about,
-    .body-presentation .presentation-photo {
+    .presentation-about, .presentation-photo {
         width: 80%;
-        min-width: unset;
     }
 
     .skills-info {
@@ -297,7 +295,6 @@ progress::after {
 
     .body-experience .box-experience .experience-info {
         width: 80%;
-        min-width: unset;
     }
 
     .body-portfolio .portfolio-main-projects .main-projects-options {
@@ -310,13 +307,10 @@ progress::after {
 
     .body-welcome .welcome-text {
         width: 60%;
-        min-width: unset;
     }
 
-    .body-presentation .presentation-about,
-    .body-presentation .presentation-photo {
+    .presentation-about, .presentation-photo {
         width: 60%;
-        min-width: unset;
     }
 
     .skills-info {
@@ -326,7 +320,6 @@ progress::after {
 
     .body-experience .box-experience .experience-info {
         width: 60%;
-        min-width: unset;
     }
 
     .body-portfolio .portfolio-main-projects .main-projects-options {
