@@ -1,9 +1,7 @@
-/* Definindo uma classe para as animações */
 .animation {
     transition: .3s all ease;
 }
 
-/* Definindo uma animação genérica de flutuação */
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -16,7 +14,6 @@
     }
 }
 
-/* Definindo uma animação de cima para baixo */
 @keyframes top_to_bottom {
     0% {
         transform: translateY(-60px);

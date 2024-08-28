@@ -31,13 +31,13 @@
     filter: invert(1);
 }
 
-footer .footer-menu .icon-social-media {
+.footer-menu .icon-social-media {
     margin-right: 2vw;
     height: 36px;
     transition: transform .3s;
 }
 
-footer .footer-menu .icon-social-media:hover {
+.icon-social-media:hover {
     transform: scale(1.2);
 }
 

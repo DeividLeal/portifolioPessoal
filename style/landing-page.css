@@ -1,4 +1,3 @@
-/* Declarações de importação */
 @import url('./variables.css');
 @import url('./animations.css');
 
@@ -102,27 +101,27 @@
 }
 
 .h3-html::after {
-    background-image: url(./assents/icon-html.webp);
+    background-image: url(/assents/icon-html.webp);
     background-size: cover;
 }
 
 .h3-css::after {
-    background-image: url(./assents/icon-css.webp);
+    background-image: url(/assents/icon-css.webp);
     background-size: cover;
 }
 
 .h3-js::after {
-    background-image: url(./assents/icon-js.webp);
+    background-image: url(/assents/icon-js.webp);
     background-size: cover;
 }
 
 .h3-react::after {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg);
+    background-image: url(/assents/react-icon.webp);
     background-size: cover;
 }
 
 .h3-git::after {
-    background-image: url(https://avatars.githubusercontent.com/u/18133?s=200&v=4https://www.alura.com.br/artigos/assets/html-css-js/imagem-4.png);
+    background-image: url(/assents/git-icon.webp);
     background-size: cover;
 }
 
@@ -155,11 +154,11 @@ progress::after {
 }
 
 /* Corpo de experiência */
-.body-experience .box-experience {
+ .box-experience {
     flex-direction: column;
 }
 
-.body-experience .box-experience .experience-info {
+ .experience-info {
     width: 50%;
     min-width: 350px;
     margin-bottom: 8vh;
@@ -177,7 +176,7 @@ progress::after {
     gap: 2vw;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project {
+ .main-projects-options .card_project {
     width: 380px;
     height: 260px;
     box-shadow: 4px 4px 1px var(--primary-color);
@@ -190,30 +189,28 @@ progress::after {
     transition: .3s;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project:hover,
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project:focus {
+ .card_project:hover,
+ .card_project:focus {
     transform: scale(1.1);
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img {
+.card_project_img {
     width: 100%;
     text-align: center;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_img img {
+.card_project_img img {
     width: 100%;
     border-radius: 8px;
     max-height: 176px;
     object-fit: cover;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .card_project .card_project_about {
-    width: 100%;
+.card_project_about {
     padding-left: 2vw;
 }
 
-.body-portfolio .portfolio-main-projects .main-projects-options .portfolio-more {
-    width: 100%;
+.portfolio-more {
     text-align: center;
 }
 
