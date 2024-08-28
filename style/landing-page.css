@@ -65,7 +65,7 @@
     align-items: center;
 }
 
-.body-presentation .presentation-photo img {
+ .presentation-photo img {
     min-width: 320px;
     width: 56%;
     border: 8px solid var(--white);
