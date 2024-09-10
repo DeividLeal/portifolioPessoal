@@ -1,4 +1,4 @@
-Olá! 👋 Bem-vindo ao meu portfólio pessoal. Aqui você encontrará detalhes sobre meu trabalho e projetos. Vamos dar uma olhada no que você pode esperar:
+Olá! 👋 Bem-vindo ao meu portfólio pessoal.
 
 🌟 Visão Geral
 Meu portfólio foi projetado com um layout responsivo, garantindo uma experiência em qualquer dispositivo — desde desktops até smartphones. 📱💻
