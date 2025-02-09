@@ -9,13 +9,32 @@ header {
     width: 100%;
     border-bottom: var(--primary-color) 1px solid;
     animation: top_to_bottom .7s .2s backwards;
-    z-index: 1;
+    z-index: 1000; /* Garantindo que o cabeçalho fique acima de outros elementos */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    z-index: 1100;
+    position: relative;
+}
+
+/* Esconde o menu por padrão em telas pequenas */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
 /* Estilos do menu principal */
 header .main-menu {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Estilos das opções principais */
@@ -26,7 +45,7 @@ header .main-menu {
 
 .main-options {
     align-items: center;
-    width: 90%;
+    max-width: 90vw;
     justify-content: space-evenly;
 }
 
@@ -58,12 +77,43 @@ header .main-menu {
     }
 
     #main-options-menu {
-        font-size: medium
+        font-size: medium;
     }
 
     .menu-link {
         display: block;
         padding: 10px;
         text-align: center;
+    }
+
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        background: var(--lm-second-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block; /* Exibe o botão de menu */
+    }
+
+    /* Quando o menu estiver ativo */
+    .menu.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 }
